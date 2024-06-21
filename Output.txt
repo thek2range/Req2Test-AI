@@ -1,0 +1,456 @@
+
+********************************  Output ***********************************************************
+
+
+
+Test Case 1: The application should be free to download from either a mobile phone application store or similar services.
+Test Case 2: 3.1.1 User interfaces 
+A first-time user of the mobile application should see the log-in page when he/she opens the application, see Figure 2.
+Test Case 3: If the user has not registered, he/she should be able to do that on the log-in page.
+Test Case 4: If the user is not a first-time user, he/she should be able to see the search page directly when the application is opened, see Figure 3.
+Test Case 5: Every user should have a profile page where they can edit their e-mail address, phone number and password, see Figure 4. Also, the user can set the mobile application to his/her preferred language.
+Test Case 6: When a user searches by price, this view should be the default one.
+Test Case 7: A restaurant owner should be able to register on the web-portal in order to log in and manage the restaurant information.
+Test Case 8: An administrator should also be able to log in to the web-portal where he/she can administer the system by for instance editing restaurant or user information.
+Test Case 9: 3.2.1 User Class 1 - The User  
+3.2.1.1 Functional requirement 1.1 
+ID: FR1 
+TITLE: Download mobile application    
+DESC: A user should be able to download the mobile application through either an application store or similar service on the mobile phone.
+Test Case 10: The application should be free to download.
+Test Case 11: DEP: None 
+3.2.1.2 Functional requirement 1.2 
+ID: FR2  
+TITLE: Download and notify users of new releases  
+DESC: When a new/updated version or release of the software is released, the user should check for these manually.
+Test Case 12: The download of the new release should be done through the mobile phone in the same way as downloading the mobile application.
+Test Case 13: DEP: FR1 
+3.2.1.3 Functional requirement 1.3 
+ID: FR3 
+TITLE: User registration - Mobile application 
+DESC: Given that a user has downloaded the mobile application, then the user should be able to register through the mobile application.
+Test Case 14: The user must provide user-name, password and e-mail address.
+Test Case 15: DEP: FR1 
+ 
+ 
+3.2.1.4 Functional requirement 1.4 
+ID: FR4 
+TITLE: User log-in - Mobile application 
+DESC: Given that a user has registered, then the user should be able to log in to the mobile application.
+Test Case 16: The log-in information will be stored on the phone and in the future the user should be logged in automatically.
+Test Case 17: DEP: FR1, FR3 
+3.2.1.5 Functional requirement 1.5 
+ID: FR5  
+TITLE: Retrieve password  
+DESC: Given that a user has registered, then the user should be able to retrieve his/her password by email.
+Test Case 18: DEP: FR1 
+3.2.1.6 Functional requirement 1.6 
+ID: FR6 
+TITLE: Mobile application - Search  
+DESC: Given that a user is logged in to the mobile application, then the first page that is shown should be the search page.
+Test Case 19: The user should be able to search for a restaurant, according to several search options.
+Test Case 20: There should also be a freetext search option.
+Test Case 21: A user should be able to select multiple search options in one search.
+Test Case 22: On each pin there should be an information link.
+Test Case 23: There should be maximally 100 results displayed.
+Test Case 24: The map view should have a default zoom.
+Test Case 25: The map view should include a button that, when selected, should display different filtering options in a filtering menu.
+Test Case 26: Each element should include the restaurant name, telephone number, type of food, distance according to the user’s position, average price, a short two-line description, a link to the restaurant’s web-page and an information link.
+Test Case 27: There should be maximally 100 results displayed.
+Test Case 28: If the result contains more restaurants than what can be displayed on the screen at one time, the user should be able to scroll through them.
+Test Case 29: When searching by price the restaurants should be sorted according to the following order:  
+average price  
+distance  
+restaurant type 
+specific dish  
+When searching by a search option, other than price, the restaurants should be sorted according to the following order:  
+distance  
+average price  
+restaurant type 
+specific dish  
+The list view should include a header with different selectable sorting options.
+Test Case 30: The list view should include a button that, when selected, should display different filtering options in a filtering menu.
+Test Case 31: RAT: The way results should be displayed in a list.
+Test Case 32: DEP: FR6 
+3.2.1.9 Functional requirement 1.9 
+ID: FR9 
+TITLE: Mobile application - Navigation to restaurant 
+DESC: A user should be able to select a pin on a map or an element on a list.
+Test Case 33: When a selection is made, the location of the restaurant should be sent to the mobile phone’s GPS-navigation program.
+Test Case 34: The user should then be navigated to the destination.
+Test Case 35: When the destination is reached, a user should be able to go back to the search page on the mobile application.
+Test Case 36: DEP: FR7, FR8 
+3.2.1.10 Functional requirement 1.10 
+ID: FR10 
+TITLE: Mobile application - Switch result view 
+DESC: A user should be able to switch between a map view and a list view for all search options.
+Test Case 37: DEP: FR7, FR8 
+3.2.1.11 Functional requirement 1.11 
+ID: FR11 
+TITLE: Mobile application - Selecting the information link 
+DESC: A user should be able to select the information link, which is included on all result items.
+Test Case 38: DEP: FR7, FR8 
+3.2.1.12 Functional requirement 1.12 
+ID: FR12 
+TITLE: Mobile application - Search by price 
+DESC: A user should be able to input a maximum and a minimum price range.
+Test Case 39: DEP: FR8 
+3.2.1.13 Functional requirement 1.13 
+ID: FR13 
+TITLE: Mobile application - Search by destination 
+DESC: A user should be able to input a maximum and a minimum distance, according to his/her position.
+Test Case 40: The user should be able to input a higher or lower maximum distance and a higher minimum distance than set by default.
+Test Case 41: DEP: FR7 
+3.2.1.14 Functional requirement 1.14 
+ID: FR14 
+TITLE: Accepted input for price and destination search 
+DESC:  Integers should be accepted as input when a user searches by price or destination.
+Test Case 42: If the system receives an invalid input the user should be informed and prompted to insert an accepted input.
+Test Case 43: DEP: FR12, FR13 
+3.2.1.15 Functional requirement 1.15 
+ID: FR15 
+TITLE: Mobile application - Search by restaurant type 
+DESC: A user should be able to select a restaurant type in a given list as input.
+Test Case 44: DEP: FR7 
+3.2.1.16 Functional requirement 1.16 
+ID: FR16 
+TITLE: Mobile application - Search by specific dish 
+DESC: A user should be able to select a specific dish in a given list as input.
+Test Case 45: DEP: FR7 
+3.2.1.17 Functional requirement 1.17 
+ID: FR17 
+TITLE: Mobile application - Free-text search 
+DESC: A user should be able to conduct a search by providing either restaurant name, restaurant description, restaurant address, restaurant type or restaurant menu in the free-text search field.
+Test Case 46: DEP: FR7 
+3.2.1.18 Functional requirement 1.18 
+ID: FR18 
+TITLE: Mobile application - No match found 
+DESC: If no match is found the user should be informed but kept on the search page in order to get the possibility to conduct a new search right away.
+Test Case 47: DEP: FR5 
+3.2.1.19 Functional requirement 1.19 ID: FR19  
+TITLE: Mobile application - Sorting results  
+DESC: When viewing the results in a list, a user should be able to sort the results according to price, distance, restaurant type, specific dish or restaurant name.
+Test Case 48: When sorting by restaurant name, specific dish or restaurant type the results should be ordered alphabetically.
+Test Case 49: When sorting by price the results should be ordered from cheapest to most expensive.
+Test Case 50: When sorting by distance the results should be ordered from closets to furthest distance according to the user’s position.
+Test Case 51: When the sort button for a specific search option is clicked, then the order should be reversed and ordered in a descending matter.
+Test Case 52: If the sort button is clicked again the order of the results should be reversed.
+Test Case 53: DEP: FR8 
+3.2.1.20 Functional requirement 1.20 
+ID: FR20  
+TITLE: Mobile application - Filtering results  
+DESC: When viewing the results in a list or a map, a user should be able to filter the results in a filtering menu.
+Test Case 54: The filtering options include: 
+increasing or decreasing the maximum distance  
+increasing or decreasing the maximum price 
+choosing a restaurant type 
+choosing a specific dish 
+When filtering the results, only the existing results shall be affected and a new search query should not be sent.
+Test Case 55: DEP: FR7, FR8 
+3.2.1.21 Functional requirement 1.21 
+ID: FR21  
+TITLE: Mobile application - Profile page 
+DESC: On the mobile application, a user should have a profile page.
+Test Case 56: A user should also be able to choose what language the mobile application should be set to.
+Test Case 57: DEP: FR1 
+3.2.2 User Class 2 - Restaurant Owner  
+3.2.2.1 Functional requirement 2.1 
+ID: FR22 Feature: Create an account 
+In order to create an account 
+A restaurant owner 
+Should register on the web-portal 
+Scenario: Required information for registration 
+Given the restaurant owner wants to create an account 
+And the restaurant owner does not have an account 
+When the restaurant owner registers on the web-portal by providing user-name 
+And password And address And e-mail address 
+And phone number 
+Then the restaurant owner should be able to apply for verification    
+	Scenario: Full information for registration 	 
+Given the restaurant owner wants to create an account 
+And the restaurant owner does not have an account 
+When the restaurant owner registers on the web-portal by providing user name 
+And password 
+And address And e-mail address And phone number 
+And mobile number 
+Then the restaurant owner should be able to apply for verification 
+Scenario: Confirmed registration 
+Given the restaurant owner has applied for verification 
+And has not received a confirmation e-mail after registration 
+When the restaurant owner receives a confirmation e-mail 
+Then the restaurant owner should be able to log in 
+3.2.2.2 Functional requirement 2.2 
+ID: FR23 Feature: Restaurant owner log-in 
+In order to use the system 
+A restaurant owner  
+Should be logged in to the web-portal 
+Scenario: Successful log-in 
+Given the restaurant owner wants to log in 
+When the restaurant owner logs in with his/her account 
+Then the restaurant owner should be logged in as a restaurant owner 
+Scenario: Retrieve password 
+Given the restaurant owner wants to log in 
+And has lost the password 
+When the restaurant owner enters his/her email address in the “Retrieve password” form 
+And submits the form 
+Then the restaurant owner should receive an email containing the password 
+ 
+ 
+3.2.2.3 Functional requirement 2.3 
+ID: FR24 Feature: Manage information 
+In order to manage information  
+A restaurant owner 
+Should be logged in to the web-portal 
+ 
+Scenario: Show fields for managing information 
+Given the restaurant owner is logged in 
+When the restaurant owner wants to manage information 
+Then the restaurant owner should be able to manage information in a form  Scenario: Filling in mandatory fields 
+Given the restaurant owner wants to fill in the mandatory fields of the form  
+When the restaurant owner provides average price 
+And address And e-mail address 
+And phone number 
+And restaurant name 
+Then the restaurant owner has filled the mandatory fields of the form  
+Scenario: Filling in optional fields 
+Given the restaurant owner of a restaurant wants to fill in optional fields in the form 
+When the restaurant owner provides restaurant description 
+And menu  
+And type of restaurant  
+And picture of restaurant 
+And mobile phone 
+Then the restaurant owner has filled in optional fields in the form 
+Scenario: Filling in menu field 
+Given the restaurant owner wants to fill in the menu field in the form 
+When the restaurant owner provides dish name 
+And dish description 
+And dish price 
+Then the restaurant owner has filled in the menu field in the form 
+Scenario: Adding information with mandatory fields 
+Given the restaurant owner has filled in the mandatory fields of the form 
+When the restaurant owner submits the form 
+Then the information about the restaurant should be added 
+Scenario: Adding information with mandatory and optional fields 
+Given the restaurant owner has filled in the mandatory fields of the form 
+And filled in one or more optional fields of the form 
+When the restaurant owner submits the form 
+Then the information about the restaurant should be added 
+Scenario: Deleting information 
+Given the restaurant owner is logged in 
+And information exists 
+When the restaurant owner deletes information 
+Then the information should be deleted 
+Scenario: Editing information 
+Given the restaurant owner is logged in 
+And information exists  
+When the restaurant owner edits information 
+Then the information should be edited 
+3.2.2.4 Functional requirement 2.4 
+ID: FR25  Feature: Restaurant owner - Selecting preferred language on the web-portal 
+In order to understand the web-portal 
+A restaurant owner 
+Should be able to select a preferred language for the web-portal 
+Scenario: Select English as preferred language 
+Given the restaurant owner wants to select a preferred language 
+When the restaurant owner selects English as a new language  
+Then the web-portal will show all text in English 
+Scenario: Select Swedish as preferred language 
+Given the restaurant owner wants to select a preferred language 
+When the restaurant owner selects Swedish as a new language  
+Then the web-portal will show all text in Swedish 
+Scenario: Select French as preferred language 
+Given the restaurant owner wants to select a preferred language 
+When the restaurant owner selects French as a new language  
+Then the web-portal will show all text in French 
+Scenario: Select Spanish as preferred language 
+Given the restaurant owner wants to select a preferred language 
+When the restaurant owner selects Spanish as a new language  
+Then the web-portal will show all text in Spanish 
+ 
+3.2.3 User Class 3 - Administrator 
+3.2.3.1 Functional requirement 3.1 
+ID: FR26 Feature: Administrator log in 
+In order to administer the system 
+An administrator 
+Should be logged in to the web-portal 
+Scenario: Successful log-in 
+Given the administrator wants to log in 
+When the administrator logs in with an administrator account 
+Then the administrator should be logged in as an administrator 
+3.2.3.2 Functional requirement 3.2 ID: FR27 
+Feature: Verify restaurant owner 
+In order to allow a restaurant owner to use the system 
+An administrator 
+Should be able to verify the restaurant owner 
+Scenario: Verify a restaurant owner 
+Given the administrator is logged in 
+When the administrator verifies a restaurant owner 
+Then the restaurant owner should be able to log in 
+And the restaurant owner should be notified by a confirmation email 
+Scenario: Reject a restaurant owner 
+Given the administrator is logged in 
+When the administrator rejects a restaurant owner Then the restaurant owner should not be able to log in 
+And the restaurant owner should be notified by a rejection email 
+3.2.3.3 Functional requirement 3.3 
+ID: FR28 Feature: Manage restaurant types 
+In order to have a list of restaurant types 
+An administrator 
+Should be able to manage the restaurant types 
+Scenario: Add a new restaurant type 
+Given the administrator is logged in 
+When the administrator creates a new restaurant type 
+Then the new restaurant type should be added to the list of restaurant types Scenario: Editing an existing restaurant type 
+Given the administrator is logged in 
+When the administrator edits an existing restaurant type 
+Then the restaurant type should be updated in the list of restaurant types 
+Scenario: Delete a restaurant type 
+Given the administrator is logged in 
+When the administrator deletes a restaurant type 
+Then the deleted restaurant type should be removed from the list of restaurant types 
+3.2.3.4 Functional requirement 3.4 
+ID: FR29 Feature: Manage restaurant dishes 
+In order to have a list of dishes 
+An administrator 
+Should be able to manage the dishes 
+Scenario: Add a new dish 
+Given the administrator is logged in 
+When the administrator creates a new dish 
+Then the new dish should be added to the list of dishes 
+Scenario: Editing an existing dish Given the administrator is logged in 
+When the administrator edits an existing dish 
+Then the dish should be updated in the list of dishes 
+Scenario: Delete a dish 
+Given the administrator is logged in 
+When the administrator deletes a dish 
+Then the deleted dish should be removed from the list of dishes 
+3.2.3.5 Functional requirement 3.5 
+ID: FR30 Feature: Manage restaurant information 
+In order to manage restaurant information  
+An administrator 
+Should be logged in to the web-portal 
+Scenario: Add restaurant information 
+Given the administrator is logged in 
+When the administrator adds restaurant information 
+Then the information should be added to the restaurant 
+Scenario: Delete restaurant information 
+Given the administrator is logged in 
+And information about a restaurant exists When the administrator deletes the information 
+Then the information about the restaurant should be deleted 
+Scenario: Edit restaurant information 
+Given the administrator is logged in  
+And information about a restaurant exists 
+When the administrator edits the information 
+Then the information about the restaurant should be edited 
+3.2.3.6 Functional requirement 3.6 
+ID: FR31 Feature: Manage users 
+In order to keep track of the users 
+An administrator 
+Should be able to manage the users 
+Scenario: Edit an existing user’s information Given the administrator is logged in 
+When the administrator edits an existing user Then the user information should be updated 
+Scenario: Delete/Inactivate an existing user 
+Given the administrator is logged in 
+When the administrator deletes an existing user 
+Then the user should be deleted 
+3.2.3.7 Functional requirement 3.7 
+ID: FR32 Feature: Manage restaurant owners 
+In order to keep track of the restaurant owners 
+An administrator 
+Should be able to manage the restaurant owners Scenario: Add a new restaurant owner 
+Given the administrator is logged in 
+When the administrator creates a new restaurant owner Then the new restaurant owner should be added 
+Scenario: Edit an existing restaurant owner 
+Given the administrator is logged in 
+When the administrator edits an existing restaurant owner Then the restaurant owner information should be updated 
+Scenario: Delete an existing restaurant owner 
+Given the administrator is logged in 
+When the administrator deletes an existing restaurant owner 
+Then the restaurant owner should be deleted 
+And the restaurant information should be deleted 
+3.2.3.8 Functional requirement 3.8 
+ID: FR33   Feature: Administrator - Selecting preferred language on the web-portal 
+In order to understand the web-portal 
+An administrator 
+Should be able to select a preferred language for the web-portal 
+Scenario: Select English as preferred language 
+Given the administrator wants to select a preferred language 
+When the administrator selects English as a new language  
+Then the web-portal will show all text in English 
+Scenario: Select Swedish as preferred language 
+Given the administrator wants to select a preferred language 
+When the administrator selects Swedish as a new language  
+Then the web-portal will show all text in Swedish Scenario: Select French as preferred language 
+Given the administrator wants to select a preferred language 
+When the administrator selects French as a new language  
+Then the web-portal will show all text in French Scenario: Select Spanish as preferred language 
+Given the administrator wants to select a preferred language 
+When the administrator selects Spanish as a new language  
+Then the web-portal will show all text in Spanish 
+3.3 Performance requirements 
+The requirements in this section provide a detailed specification of the user interaction with the software and measurements placed on the system performance.
+Test Case 58: 3.3.1 Prominent search feature 
+ID: QR1 
+TITLE: Prominent search feature 
+DESC: The search feature should be prominent and easy to find for the user.
+Test Case 59: DEP: none 
+3.3.2 Usage of the search feature 
+ID: QR2 
+TITLE: Usage of the search feature 
+DESC: The different search options should be evident, simple and easy to understand.
+Test Case 60: DEP: none 
+3.3.3 Usage of the result in the list view 
+ID: QR3 
+TITLE: Usage of the result in the list view 
+DESC: The results displayed in the list view should be user friendly and easy to understand.
+Test Case 61: Selecting an element in the result list should only take one click.
+Test Case 62: DEP: none 
+3.3.4 Usage of the result in the map view 
+ID: QR4 
+TITLE: Usage of the result in the map view 
+DESC: The results displayed in the map view should be user friendly and easy to understand.
+Test Case 63: Selecting a pin on the map should only take one click.
+Test Case 64: Usage of the information link 
+ID: QR5 
+TITLE: Usage of the information link 
+DESC: The information link should be prominent and it should be evident that it is a usable link.
+Test Case 65: Selecting the information link should only take one click.
+Test Case 66: SCALE:  If the system loses the connection to the Internet or to the GPS device or the system gets some strange input, the user should be informed.
+Test Case 67: ID: QR22 
+TITLE: Internet Connection 
+DESC: The application should be connected to the Internet.
+Test Case 68: DEP: none ID: QR23 
+TITLE: GPS Connection 
+DESC: The application should be connected to the GPS device.
+Test Case 69: SCALE: The messages should be encrypted for log-in communications, so others cannot get user-name and password from those messages.
+Test Case 70: MUST: 100% of the Communication Messages in the communication of a log-in session should be encrypted.
+Test Case 71: SCALE:  If a restaurant owner tries to log in to the web portal with a non-existing account then the restaurant owner should not be logged in.
+Test Case 72: The restaurant owner should be notified about log-in failure.
+Test Case 73: SCALE:  If an admin tries to log in to the web portal with a non-existing account then the admin should not be logged in.
+Test Case 74: The admin should be notified about log-in failure.
+Test Case 75: SCALE: A restaurant owner and IP address should not be able to log-in for a certain time period after three times of failed log-in attempts.
+Test Case 76: MUST: The locking period should be half an hour, and during that period the log-in function is disabled.
+Test Case 77: SCALE: An admin and IP address should not be able to log-in to the web portal for a certain time period after three times of failed log-in attempts.
+Test Case 78: MUST: The locking period should be half an hour, and during that period the log-in function is disabled.
+Test Case 79: SCALE:  If a user wants to create an account and the desired user name is occupied, the user should be asked to choose a different user name.
+Test Case 80: SCALE:  If a restaurant owner wants to create an account and the desired user name is occupied, the restaurant owner should be asked to choose a different user name.
+Test Case 81: 3.5.4 Maintainability 
+ID: QR19 
+TITLE: Application extendibility 
+DESC: The application should be easy to extend.
+Test Case 82: The code should be written in a way that it favors implementation of new functions.
+Test Case 83: DEP: none 
+ID: QR21 
+TITLE: Application testability 
+DESC: Test environments should be built for the application to allow testing of the applications different functions.
+Test Case 84: Portability  
+ID: QR20 
+TITLE: Application portability 
+DESC: The application should be portable with iOS and Android.
+Test Case 85: DEP: none 
+ 
+ 
+ 
+ 	 
+4. Prioritization and Release Plan 
+ 
+In order to get a view of how to divide the requirements into different releases and what requirements should be included in which release, a prioritization of the requirements is needed.
